@@ -31,3 +31,18 @@ namespace Tavolugras
 
     }
 }
+
+        public int Valid()
+        {
+            return results.Where(x => x != 0).Count();
+        }
+
+        public double Average()
+        {
+            return results.Where(x => x != 0).Average();
+        }
+
+        public double Best()
+        {
+            return results.Max(x => x);
+        }
